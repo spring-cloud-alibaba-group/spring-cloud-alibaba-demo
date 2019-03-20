@@ -1,0 +1,25 @@
+dubbo:
+  registry:
+    address: spring-cloud://localhost
+
+server:
+  port: 50000
+
+spring:
+  application:
+    name: spring-cloud-alibaba-dubbo-consumer
+  cloud:
+    nacos:
+      discovery:
+        enabled: true
+        register-enabled: true
+        server-addr: 127.0.0.1:8848
+  main.allow-bean-definition-overriding: true
+
+provider:
+  application:
+    name: spring-cloud-alibaba-dubbo-provider
+
+ribbon:
+  nacos:
+    enabled: true

@@ -1,0 +1,24 @@
+spring:
+  application:
+    name: spring-cloud-alibaba-dubbo-provider
+  main:
+    allow-bean-definition-overriding: true
+  cloud:
+    nacos:
+      discovery:
+        register-enabled: true
+        server-addr: 127.0.0.1:8848
+        port: 40000
+
+dubbo:
+  scan:
+    base-packages: org.springframework.cloud.alibaba.demo.dubbo.service
+  protocols:
+    dubbo:
+      name: dubbo
+      port: -1
+  registry:
+    address: spring-cloud://localhost
+
+server:
+  port: 40000
