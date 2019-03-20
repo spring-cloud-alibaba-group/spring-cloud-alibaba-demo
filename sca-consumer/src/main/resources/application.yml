@@ -36,7 +36,6 @@ spring.cloud.stream:
     destination: binder-topic
     content-type: application/json
     group: yunqi-group
-    vip-channel-enabled: false
 
 server:
   port: 30000
