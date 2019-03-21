@@ -52,7 +52,7 @@ http://localhost:30000/templateWithLB
 
 3. feign 调用：
 
-http://localhost:30000/templateWithLB
+http://localhost:30000/sleep
 
 4. error.sh 查看异常比例降级。
 
@@ -60,8 +60,10 @@ http://localhost:30000/templateWithLB
 
 6. resttemplate 和 feign 的客户端限流。
 
+7. sca-provider 换个端口启动，查看负载均衡效果。
+
 http://localhost:30000/configInfo
 
-6. sca-provider 换个端口启动，查看负载均衡效果。
+8. nacos 下线一个 sca-provider 实例再查看负载均衡效果。
 
-7. nacos 下线一个 sca-provider 实例再查看负载均衡效果。
+http://localhost:30000/configInfo
