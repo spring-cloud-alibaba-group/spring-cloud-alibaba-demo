@@ -50,5 +50,6 @@ ribbon:
   ReadTimeout: 2000
   ConnectTimeout: 2000
 
+sca-provider.ribbon.ServerListRefreshInterval: 3000
 
 logging.level.com.alibaba.nacos: ERROR
