@@ -14,4 +14,4 @@ Spring Cloud Alibaba [开源地址](https://github.com/spring-cloud-incubator/sp
 
 本次将通过编码示例演示如何使用 Spring Cloud Alibaba 开发 RESTFul 应用 和 Dubbo 应用，并演示阿里中间件对 Spring Cloud 规范的实现和增强。
 
-Talk is cheap，show you the code.
+Talk is cheap, show you the code.
