@@ -139,3 +139,9 @@ curl -X PUT 'localhost:8848/nacos/v1/ns/operator/switches?entry=serverMode&value
 
 
 2. 启动多个应用 Provider 的话，intellij 勾掉 Single instance only 选项
+
+3. bus
+
+```bash
+curl --header "Content-Type:application/json" -XPOST 'http://localhost:20000/actuator/bus-env?name=alibaba&value=hangzhou'
+```

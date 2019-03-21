@@ -22,6 +22,7 @@ spring.cloud.stream:
   rocketmq:
     bindings.output.producer:
       group: producer-binder-group
+      send-message-timeout: 30000
 #      sync: true
     binder.name-server: localhost:9876
   bindings.output:
