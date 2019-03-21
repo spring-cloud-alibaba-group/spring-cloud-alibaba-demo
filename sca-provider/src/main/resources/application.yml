@@ -20,14 +20,22 @@ logging.level.com.alibaba.nacos: ERROR
 
 spring.cloud.stream:
   rocketmq:
-    bindings.output.producer:
-      group: producer-binder-group
-      send-message-timeout: 30000
+    bindings:
+      output.producer:
+        group: producer-binder-group
+        send-message-timeout: 30000
+      springCloudBusOutput.producer:
+        send-message-timeout: 30000
 #      sync: true
     binder.name-server: localhost:9876
-  bindings.output:
-    destination: binder-topic
-    content-type: application/json
+  bindings:
+    output:
+      destination: binder-topic
+      content-type: application/json
+    springCloudBusInput:
+      destination: springCloudBus
+    springCloudBusOutput:
+      destination: springCloudBus
 
 server:
   port: 20000
